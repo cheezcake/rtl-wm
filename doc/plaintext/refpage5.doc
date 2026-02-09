@@ -1,0 +1,62 @@
+                             QUICK REFERENCE PAGE
+                       SIEMENS RTL TILED WINDOW MANAGER
+                         RELEASE 5 FOR USE WITH X11R2
+
+                                3 BUTTON MOUSE
+
+
+
+Borders                                 Icon
+
+            LEFT   -- Resize                        LEFT   -- Open
+      SHIFT LEFT   -- Resize*            CTRL SHIFT LEFT   -- Redraw
+
+            MIDDLE -- Move                          MIDDLE -- Move
+      SHIFT MIDDLE -- Move*                   SHIFT MIDDLE -- Move*
+                                               CTRL MIDDLE -- Exchange
+            RIGHT  -- Window Menu        CTRL SHIFT MIDDLE -- Redraw
+
+     Side borders constrain move and                RIGHT  -- Icon Menu
+   resize                                CTRL SHIFT RIGHT  -- Soft Kill
+
+Zoom Gadget
+                                             All other combinations are
+            LEFT   -- Desire               transmitted to the client
+      SHIFT LEFT   -- Zoom / Unzoom
+       CTRL LEFT   -- Enlarge                Note: When opening the icon,
+ CTRL SHIFT LEFT   -- Redraw               double clicking automatically places
+                                           the window.  A single press or click
+ CTRL SHIFT MIDDLE -- Redraw               allows the user to place it
+                                           manually.
+ CTRL SHIFT RIGHT  -- Close
+                                        Rtl Icon
+
+Move Gadget                                         LEFT   -- Deselect Listener
+                                         CTRL SHIFT LEFT   -- Redraw All
+ CTRL SHIFT LEFT   -- Redraw
+                                                    MIDDLE -- Move
+            MIDDLE -- Relocate                SHIFT MIDDLE -- Move*
+      SHIFT MIDDLE -- Move                     CTRL MIDDLE -- Exchange
+       CTRL MIDDLE -- Exchange           CTRL SHIFT MIDDLE -- Redraw All
+ CTRL SHIFT MIDDLE -- Redraw
+                                                    RIGHT  -- Main Manager Menu
+ CTRL SHIFT RIGHT  -- Close
+                                             All other combinations deselect
+                                           the listener as well
+Header
+                                        Background
+            MIDDLE -- Move
+      SHIFT MIDDLE -- Move*                         LEFT   -- Deselect Listener
+                                         CTRL SHIFT LEFT   -- Redraw All
+            RIGHT  -- Window Menu
+                                         CTRL SHIFT MIDDLE -- Redraw All
+     All other combinations are
+   transmitted to the client                        RIGHT  -- Main Manager Menu
+
+                                             All other combinations deselect
+  * Toggles gravity during operation       the listener as well
+
+     To cancel an operation, press the RIGHT mouse button.
+
+     A question mark cursor is a request for confirmation.  Click the LEFT or
+   MIDDLE mouse button to confirm, the RIGHT mouse button to cancel.

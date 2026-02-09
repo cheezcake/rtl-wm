@@ -1,0 +1,38 @@
+Andrew Typescript
+	typescript
+Andrew Console
+	console
+Andrew Help
+	help
+Andrew Editor
+	ez
+Andrew Mail
+	messages
+Terminal 
+	xterm -fn serif10
+Clock 
+	xclock -update 90 -analog
+Stop Watch
+	xclock -update 1 -analog
+Xterm Console 
+	xterm -C -sb -name Console
+System Load 
+	xload
+Performance Monitor
+	xperfmon
+Control Panel
+	xpref
+Man Page Browser
+	xman
+Gmacs 
+	gmacs -font 8x13
+Calculator 
+	xcalc
+Cadillac
+	xjumpto cadillac
+Demon
+	xdemon
+Rutgers (Aramis)
+	xjumpto aramis.rutgers.edu "xterm -s"
+Rutgers (Suns)
+	xjumpto ramones.rutgers.edu "xterm -s"

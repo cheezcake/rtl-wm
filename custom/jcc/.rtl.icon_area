@@ -1,0 +1,7 @@
+rtl.useIcons: on
+rtl.useIconArea: on
+
+rtl.iconAreaTop: 0
+rtl.iconAreaLeft: 0
+rtl.iconAreaRight: 450
+rtl.iconAreaBottom: 900

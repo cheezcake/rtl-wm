@@ -1,0 +1,99 @@
+rtl.gravity: 16
+rtl.borderSize: 4
+rtl.outerBorderLinewidth: 1
+rtl.innerBorderLinewidth: 1
+rtl.listenerTiedToZoom: off
+rtl.autoPlaceOnUnsizedOpen: off
+rtl.includeBackgroundMenuInWindowMenu: off
+rtl.allowAutomaticShrinkOnExchange: off
+rtl.preferToShrinkOnCornerOpen: on
+
+rtl.autoProrate: off
+rtl.biasedAutoProrate: off
+
+rtl.placePointerInGadgetAfterManualOpen: off
+rtl.placePointerInGadgetAfterUserAutoOpen: off
+rtl.placePointerInIconAfterClose: off
+rtl.placePointerBackAfterMenuOperation: off
+rtl.placePointerBackOnCancel: off
+rtl.placePointerInGadgetAfterExchange: off
+rtl.placePointerInGadgetAfterMove: off
+rtl.placePointerInBodyInsteadOfGadget: on
+
+rtl.placePointerInBorderAfterResize: on
+rtl.placePointerInBodyInsteadOfBorder: off
+
+rtl.iconPlacement: 1
+rtl.secondaryIconPlacement: 3
+
+rtl*userNormalMinWidth: 60
+rtl*userNormalMinHeight: 60
+rtl*preferPreviousPosition: on
+rtl*preferPreviousIconPosition: off
+rtl*enforceClientMinimums: on
+
+rtl.XTerm.autoPlaceOnClientOpen: off
+rtl.XTerm.ignoreInitialPositionHints: on
+rtl.XTerm.iconPixmapFile: ~rtl/custom/bitmaps/xterm.xbm
+rtl.XTerm.clientMinWidth: 100
+rtl.XTerm.clientMinHeight: 80
+
+rtl.xconsole.requireManualClose: on
+rtl.xconsole.clientMinWidth: 80
+rtl.xconsole.clientMinHeight: 60
+rtl.xconsole.iconPixmapFile: ~rtl/custom/bitmaps/console.xbm
+
+rtl.init.iconPixmapFile: ~rtl/custom/bitmaps/tombstone.xbm
+
+rtl.remoteXterm.superclass: Xterm
+rtl.remoteXterm.iconPixmapFile: ~rtl/custom/bitmaps/xterm1.xbm
+rtl.remoteXterm.includeTitleInPixmapIcon: on
+rtl.remoteXterm.includeResClassInIconTitle: off
+rtl.remoteXterm.includeResNameInIconTitle: off
+rtl.remoteXterm.includeNameInIconTitle: off
+rtl.remoteXterm.includeHostInIconTitle: on
+rtl.remoteXterm.iconHostLeft: 1
+rtl.remoteXterm.iconHostRight: 71
+rtl.remoteXterm.iconHostTop: 14
+rtl.remoteXterm.iconHostBottom: 32
+rtl.remoteXterm.expensiveToRedraw: on
+
+rtl.outputonly.useBorders: on
+rtl.outputonly.useHeader: off
+rtl.outputonly.noteListener: off
+
+rtl.xclock.superClass: outputonly
+rtl.xclock.normalDesiredWidth: 80
+rtl.xclock.normalDesiredHeight: 80
+rtl.xclock.iconPixmapFile: ~rtl/custom/bitmaps/timex.xbm
+
+rtl.xbiff.superClass: outputonly
+rtl.xbiff.normalDesiredWidth: 64
+rtl.xbiff.normalDesiredHeight: 64
+rtl.xbiff.iconPixmapFile: ~rtl/custom/bitmaps/mailbox_checked.xbm
+
+rtl.emacs.iconPixmapFile: ~rtl/custom/bitmaps/emacs.xbm
+rtl.emacs.clientMinWidth: 120
+rtl.emacs.clientMinHeight: 100
+
+rtl.xload.superClass: outputonly
+rtl.xload.normalDesiredWidth: 100
+rtl.xload.normalDesiredHeight: 100
+rtl.xload.iconPixmapFile: ~rtl/custom/bitmaps/perfmon.xbm
+
+rtl.yow.iconPixmapFile: ~rtl/custom/bitmaps/pinhead.xbm
+rtl.yow.saveInLayout: off
+
+rtl.console.iconPixmapFile: ~rtl/custom/bitmaps/realeye.xbm
+
+rtl.typescript.iconPixmapFile: ~rtl/custom/bitmaps/cmdtool.xbm
+rtl.typescript.clientMinWidth: 100
+rtl.typescript.clientMinHeight: 80
+
+rtl.help.iconPixmapFile: ~rtl/custom/bitmaps/huh.xbm
+
+rtl.messages.iconPixmapFile: ~rtl/custom/bitmaps/zip.xbm
+
+rtl.ez.iconPixmapFile: ~rtl/custom/bitmaps/ez.xbm
+
+rtl.pipescript.iconPixmapFile: ~rtl/custom/bitmaps/pipes1.xbm

@@ -1,0 +1,10 @@
+#! /bin/sh
+ANDREWDIR=/usr/andrew; export ANDREWDIR
+CLASSPATH=${ANDREWDIR}/dlib/be2; export CLASSPATH
+BE2WM=x11; export BE2WM
+DISPLAY='unix:0'; export DISPLAY
+cd $HOME
+(console) &
+(typescript) &
+(gmacs) &
+(messages) &

@@ -1,0 +1,12 @@
+Prorate
+    .rtl.prorate
+Listener -> Zoom
+    .rtl.zoom
+Listener -> Zoom/Prorate
+    .rtl.zoom_prorate
+Listener -> Enlarge/Prorate
+    .rtl.enlarge_prorate
+Hack
+    ~/.rtl.enlarge_prorate ~ellis/.rtl.hack
+Non-Automatic
+    .rtl.nonauto

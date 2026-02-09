@@ -1,0 +1,4 @@
+rtl.listenerTiedToZoom: on
+rtl.autoRepopulateLast: off
+rtl.autoProrate: on
+rtl.requirePreviousPosition: on

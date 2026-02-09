@@ -1,0 +1,19 @@
+
+rtl.autoRepopulateLast: off
+rtl.autoRepopulateOnAutoUnzoom: off
+rtl.autoRepopulateOnClose: off
+rtl.autoRepopulateOnExplicitUnzoom: off
+
+rtl.requirePreviousPosition: on
+
+rtl.allowShrinkOnCornerOpen: off
+rtl.allowShrinkOnResize: off
+
+rtl.tryCenterNeighborhoodOnOpen: off
+rtl.tryEdgeNeighborhoodOnOpen: off
+rtl.trySlidingOnResize: off
+rtl.tryCenterNeighborhoodOnResize: off
+rtl.tryEdgeNeighborhoodOnResize: off
+rtl.tryCenterNeighborhoodOnExchange: off
+
+rtl.autoDesiredEnlarge: off

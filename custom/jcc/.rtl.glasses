@@ -1,0 +1,10 @@
+rtl.absMinWidth: 60
+rtl.absMinHeight: 60
+rtl.borderSize: 10
+rtl.outerBorderLinewidth: 4
+rtl.innerBorderLinewidth: 2
+rtl.gadgetWidth: 20
+
+rtl*iconWidth: 80
+rtl*iconHeight: 80
+rtl*headerHeight: 20

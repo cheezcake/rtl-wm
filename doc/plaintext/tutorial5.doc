@@ -1,0 +1,236 @@
+                                   TUTORIAL:
+                          INITIAL SETUP FOR USING THE
+                                  SIEMENS RTL
+                             TILED WINDOW MANAGER
+
+                                   RELEASE 5
+                              FOR USE WITH X11R2
+
+
+                                ELLIS S. COHEN
+                  SIEMENS RESEARCH & TECHNOLOGY LABORATORIES
+                             105 COLLEGE ROAD EAST
+                            PRINCETON NJ 08540-6668
+                                (609) 734-6524
+
+                           COMMENTS OR QUESTIONS TO
+                      rtl@cadillac.siemens.com (INTERNET)
+                     princeton!siemens!cadillac!rtl (UUCP)
+
+                                 17 JUNE 1988
+
+
+      Copyright  1988  by  Siemens  Research  and  Technology Laboratories,
+    Princeton, NJ
+
+      Permission to use, copy, modify, and  distribute  this  documentation
+    and  the  software  described for any purpose and without fee is hereby
+    granted, provided that the above copyright notice appear in all  copies
+    and  that  both that copyright notice and this permission notice appear
+    in supporting documentation, and that the name of Siemens Research  and
+    Technology  Laboratories  not  be  used  in  advertising  or  publicity
+    pertaining to distribution of the software  without  specific,  written
+    prior permission.
+
+      SIEMENS  DISCLAIMS  ALL  WARRANTIES  WITH  REGARD  TO  THIS SOFTWARE,
+    INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN  NO
+    EVENT   SHALL   SIEMENS   BE   LIABLE  FOR  ANY  SPECIAL,  INDIRECT  OR
+    CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS  OF
+    USE,  DATA  OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+    OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE  OR
+    PERFORMANCE OF THIS SOFTWARE.
+
+
+
+    This  tutorial  describes  how to become an initial user of the Siemens
+    rtl Tiled Window Manager.  It assumes that  you  already  know  how  to
+    start  the  X11R2 (X11 and  the  X Window System are trademarks of MIT)
+    server and are familiar with X11 applications.
+
+    The tutorial explains how to set up customization files, how to set  up
+    your  initial  window  layout along with per-window options, and how to
+    save that layout.  Once the layout is saved, it will  automatically  be
+    recreated when you start up the system in the future.
+
+    A  Quick  Reference  Page  describing the actions associated with mouse
+    buttons, and a Manual are also available.
+
+
+
+Except for menus and transient pop-up windows, the rtl window manager does  not
+permit  windows  to overlap.  Because of this, rtl has features and constraints
+not found in other window managers.  Getting your environment set  up  so  that
+you can use rtl effectively takes some extra time.  IT IS WORTH IT!
+
+1. Preparation
+
+First, make sure that you have the following two files in your home directory:
+
+   - .rtl.tools  --  initializes a menu from which you can easily start up
+     new applications once rtl is running.
+
+   - .rtl.preferences -- specifies  global  and  per-window-class  options
+     that control both the semantics and the appearance of rtl.
+
+Find  out  where  the  rtl  distribution is located on your filesystem.  In the
+custom subdirectory, you will  find  example  .rtl.tools  and  .rtl.preferences
+files that we use at our lab.
+
+      NOTE:   If you don't use a .rtl.preferences file, defaults are chosen
+    that provide a fairly conservative  interface.    The  .rtl.preferences
+    file  in  the  custom  subdirectory  allows windows to be automatically
+    moved  and  resized  a  bit  more  easily  and  tailors  the  interface
+    specifically  for  individual  applications.    The last section of the
+    manual describes the options in detail.
+
+      NOTE:  The .rtl.preferences file in the  custom  subdirectory  has  a
+    number  of "iconPixmapFile" entries.  These designate a file containing
+    a bitmap to be used for the  corresponding  application's  icon.    The
+    bitmap files are stored in the custom subdirectory.  Make sure that the
+    path to the custom subdirectory is  correct  for  the  "iconPixmapFile"
+    entries.
+
+The  Customization  section of the manual has information about additional ways
+you can customize your environment.
+
+2. Starting up RTL and your Applications
+
+Once your X server is running, you can start up rtl.  If X clients are  already
+mapped, rtl will tile them.
+
+Now, start up the remaining applications you typically want running.
+
+Some   applications  request  to  be  initially  iconized  via  their  WM_HINTS
+property,(Each X11 window can have various  "properties"  associated  with  it.
+Some  of  these  properties  are  set by clients to communicate with the window
+manager.  See section 9.1 of the Xlib manual if  you  want  more  information.)
+and rtl will do so.  Otherwise, the window is initially mapped.
+
+By  default,  the option autoPlaceOnClientOpen is on, which means that rtl will
+automatically find a place for the window.
+
+If you have set it off in your preference file, you may be asked  to  place  it
+automatically,  depending upon whether the client has specified an initial size
+and position (in the WM_NORMAL_HINTS property).
+
+   - If the client provided both a size and position hint, the window will
+     be placed automatically, though because of tiling, not necessarily at
+     exactly the size or position requested.
+
+   - Otherwise, you will asked to determine both its  size  and  position.
+     The  cursor  will  change  to a dotted box.  Pressing or clicking the
+     left mouse button designates  the  top-left  corner.    Releasing  or
+     re-clicking  designates  the bottom-right corner.  Pressing the right
+     mouse button iconizes the window instead.  (For a  one-button  mouse,
+     hold CTRL and SHIFT and click to iconize).
+
+Some  clients  set  bogus  initial  window  positions  (usually <0,0>), and are
+automatically placed by rtl even when that is not appropriate.   You  can  tell
+rtl  to  ignore  the  initial  position set by the client by setting the option
+ignoreInitialPositionHints for those clients.
+
+If you do not like the layout, you can change it by resizing or moving  windows
+around.    See  the  Quick  Reference  Page which explains how to use the mouse
+buttons, or see the Manual for more details.
+
+3. Client Minimum and Maximum Size
+
+Many clients set a reasonable  client  minimum  size  via  the  WM_NORMAL_HINTS
+property.    Some  do  not.    You can tell by trying to resize the window.  By
+default, the window manager will not allow the window to be made  smaller  than
+its client minimum size.
+
+If  the  size set by the client seems too small, you can override it by setting
+"clientMinimumWidth" and "clientMinimumHeight" in your preferences  file.    If
+you  reread  your preferences file (via the "Read Profile" entry in the manager
+menu), these will affect future applications of the same class.
+
+You can also set "clientMaximumWidth" and "clientMaximumHeight" to override the
+client's maximum size hint.
+
+4. User Minimum Size
+
+When  a  window  is  enlarged  or  opened,  an  adjacent  window  may be shrunk
+automatically by rtl.  A window is never  shrunk  any  smaller  than  its  user
+minimum  size.  The wm will not let you make the user minimum size smaller than
+the client minimum size.
+
+You may set a window's user  minimum  size  by  selecting  "Set  Size"  from  a
+window's  menu, and then selecting "Normal Min" from the submenu.  You can then
+press or click on a side or corner, and resize to indicate the minimum size.
+
+You can set the user minimum  size  on  a  per-window-class  basis  by  setting
+"userNormalMinWidth"  and  "userNormalMinHeight" in your preferences files, but
+these will not be applied to existing windows.
+
+If you plan to zoom the window, you can set the zoom minimum size similarly.
+
+5. Per Window Options
+
+By selecting  "Options"  from  a  window  menu,  a  submenu  indicates  various
+per-window options that you can select:
+
+   - Locked Open -- prevents the window from being automatically closed.
+
+   - Fixed  Width  -- prevents the window's width from being automatically
+     changed.
+
+   - Fixed Height -- prevents the window's height from being automatically
+     changed.
+
+   - Fixed  Edges  --  prevents  the  window  from  being moved or resized
+     automatically.
+
+   - Listener Tied To Zoom -- Zooms (unzooms) the window when  it  becomes
+     (no longer is) the listener.
+
+These   options  can  be  set  on  a  per-window-class  basis  by  setting  the
+corresponding options in the preferences file.  See the  Customization  section
+of the Manual.
+
+6. Save the Layout
+
+Once  you  have  the  windows where you want them, have set the minimum size of
+your windows, and have determined their per-window options, you  are  ready  to
+save the layout.
+
+Select  "Save  Layout"  from the manager menu.  A question mark cursor asks for
+confirmation.  Click with the left button to confirm, with the right button  to
+cancel.  (For a one-button mouse, hold CTRL and SHIFT and click to cancel).
+
+Selecting "Save Layout" saves information about all open and closed windows and
+their icons in .rtl.layout file in your home directory.
+
+7. Build a Startup File
+
+Now that you know which applications you typically like running, you can  build
+a shell file that starts them up.
+
+If  you  name  the  shell file .rtl.startup, and put in your home directory, it
+will automatically get executed, if you invoke rtl with the "-s" flag
+
+8. Restarting
+
+When you subsequently start rtl, the .rtl.layout file will be read in and  will
+be  used  to  match up applications that have already started or which you will
+start up in the future.
+
+Until every saved window in .rtl.layout is matched by an opened window or icon,
+certain automatic strategies used by the window manager to balance screen space
+are disabled in order to allow the saved layout to be precisely restored.
+
+In the meantime, "Finish Layout" appears in the window manager  menu.    If  an
+expected window does not open for some reason (host down, program bombs, etc.),
+the user can tell the window  manager  to  treat  the  layout  as  finished  by
+selecting "Finish Layout".
+
+Alternately,  by  specifying the flag "-f" when the rtl is started, the windows
+on the screen when rtl is started are laid out, but then, the layout is treated
+as finished and "Finish Layout" does not appear.  If you specify the flag "-i",
+then the layout file is ignored entirely.
+
+When the layout has been finished, in whatever way, "Save  Layout"  appears  in
+the  place  of  "Finish  Layout",  allowing  the user to change the layout, and
+resave it, overwriting the old layout file.
+
+Enjoy!

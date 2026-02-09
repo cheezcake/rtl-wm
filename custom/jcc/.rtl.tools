@@ -1,0 +1,21 @@
+Terminal
+ xterm
+Console
+ xterm -C -sb -name console
+Clock
+ xclock
+Load Monitor
+ xload
+Mail Monitor
+ xbiff
+Calculator
+ xcalc
+Editor
+ gmacs
+Sabbath
+ rxterm sabbath.rutgers.edu camaratt
+Talking Heads
+ xsr talking
+RTL Background
+ xsetroot -bitmap ~tiled/xinclude/icons/rtl_icon.h
+

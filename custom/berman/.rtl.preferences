@@ -1,0 +1,197 @@
+rtl.gravity: 16
+rtl.borderSize: 6
+rtl.outerBorderLinewidth: 2
+rtl.innerBorderLinewidth: 1
+rtl.headerHeight: 16
+rtl.clearBodyOnRedraw: on
+rtl.distinguishCornerBordersByInverse: on
+rtl.distinguishCornerBorders: on
+
+rtl.useIcons: on
+rtl.useIconArea:on
+rtl.iconAreaLeft: 400
+rtl.iconAreaRight: 1180
+rtl.iconAreaTop: 0
+rtl.iconAreaBottom: 128
+
+rtl.useBorders: on
+rtl.useCornerBorders: on
+rtl.useMoveGadget: on
+rtl.useHeader: on
+
+rtl.moveInHeader: off
+
+rtl.managerMenuInBody: off
+
+rtl.resetMaxOnIncrease: on
+rtl.resetMinOnDecrease: on
+
+rtl.useRtlIcon: on
+rtl.placePointerBackOnCancel: on
+
+rtl.focusFollowsPointer: on
+
+rtl.allowAggressiveRepopulation: on
+
+rtl.autoProrate: off
+rtl.prorateLocally: off
+rtl.autoProrateLocally: off
+
+rtl.iconPlacement: 4
+rtl.secondaryIconPlacement: 1
+
+rtl.autoRepopulateLast: on
+rtl.autoRepopulateOnAutoUnzoom: on
+rtl.autoRepopulateOnClose: off
+rtl.autoRepopulateOnExplicitUnzoom: on
+
+rtl.preferPreviousPositionOnAutoRepopulate: on
+rtl.preferPreviousPositionOnExplicitRepopulate: on
+
+rtl.requirePreviousPositionOnAutoRepopulate: off
+rtl.requirePreviousPositionOnLastRepopulate: off
+
+rtl.allowAutomaticShrinkOnAutoRepopulate: on
+rtl.allowAutomaticShrinkOnExchange: on
+
+rtl.allowShrinkOnCornerOpen: off
+rtl.allowShrinkOnResize: off
+
+rtl.tryCenterNeighborhoodOnOpen: on
+rtl.tryEdgeNeighborhoodOnOpen: off
+rtl.trySlidingOnResize: on
+rtl.tryCenterNeighborhoodOnResize: on
+rtl.tryEdgeNeighborhoodOnResize: off
+rtl.tryCenterNeighborhoodOnExchange: on
+                                    
+rtl.preferCloseToShrinkOnCornerOpen: on
+rtl.preferCenterNeighborhoodToAutomaticCloseOnOpen: on  
+rtl.preferCenterNeighborhoodToAutomaticShrinkOnOpen: on
+rtl.preferCenterNeighborhoodToShrinkOnOpen: on
+rtl.preferEdgeNeighborhoodToAutomaticCloseOnOpen: on
+rtl.preferDesktopToAutomaticShrinkOnAutoOpen: off
+rtl.preferDesktopToShrinkOnAutoOpen: off
+
+rtl.preferCloseToShrinkOnResize: on
+rtl.preferSlidingToAutomaticCloseOnResize: on
+rtl.preferSlidingToAutomaticShrinkOnResize: on
+rtl.preferSlidingToShrinkOnResize: on
+rtl.preferCenterNeighborhoodToAutomaticCloseOnResize: on
+rtl.preferCenterNeighborhoodToShrinkOnResize: on
+
+rtl.unzoomTiedListenerIfNecessary: on
+
+rtl*forceShrinkOnUnzoom: off
+rtl*regularMinWidth: 64
+rtl*regularMinHeight: 40
+rtl*aggressivelyRepopulate: off
+rtl*autoPlaceOnClientOpen: on
+rtl*autoOpenOnCreate: off
+rtl*autoPlaceOnUnsizedOpen: off
+rtl*preferPreviousIconPosition: on
+
+
+rtl*iconResBottom: 10
+rtl*iconHostTop: 12
+rtl*iconHostBottom: 20
+
+rtl*includeClassInHeader: on
+rtl*includeResClassInTitle: on
+rtl*includeResNameInTitle: on
+rtl*includeResClassInIconTitle: off
+rtl*includeResNameInIconTitle: off
+rtl*includeHostInTitle: off
+rtl*includeHostInIconTitle: off
+rtl*autoPlaceOnClientOpen: off
+rtl*ignoreInitialPositionHints: on
+
+rtl.OutputOnly.useBorders: off
+rtl.OutputOnly.useGadgets: off
+rtl.OutputOnly.headerHeight: 4
+rtl.OutputOnly.includeResClassInTitle: off
+rtl.OutputOnly.includeTitleInHeader: off
+
+rtl.xclock.superClass: OutputOnly
+rtl.xclock.regularDesiredWidth:    74
+rtl.xclock.regularDesiredHeight:    80
+rtl.xclock.useBorders: off
+		
+rtl.xload.superClass: OutputOnly
+
+rtl.xlogo.superClass: OutputOnly
+rtl.xlogo.headerHeight: 2
+
+
+rtl.xpref.clientMinWidth: 220
+rtl.xpref.clientMinHeight: 480
+
+rtl.console.superClass: OutputOnly
+rtl.console.useBorders: on
+rtl.console.enforceClientMinimums: off
+rtl.console.fixedCompletely:on
+rtl.console.requireManualClose: on
+rtl.console.iconPixmapFile: ~rtl/custom/bitmaps/eye1.xbm
+
+rtl.xbiff.superClass: OutputOnly
+rtl.xbiff.userNormalMinWidth: 64
+rtl.xbiff.userNormalMinHeight: 64
+
+rtl.TextClass.clientMinWidth:  300
+rtl.TextClass.clientMinHeight:  200
+rtl.TextClass.includeHostInIconTitle:  on
+rtl.TextClass.includeNameInIconTitle: off
+rtl.TextClass.includeTitleInPixmapIcon:  on
+
+rtl.XTerm.superClass: TextClass
+rtl.XTerm.iconPixmapFile: ~rtl/custom/bitmaps/xterm1.xbm
+rtl.XTerm.iconHostLeft: 1
+rtl.XTerm.iconHostRight: 71
+rtl.XTerm.iconHostTop: 14
+rtl.XTerm.iconHostBottom: 32
+rtl.XTerm.normalDesiredWidth: 600
+rtl.XTerm.normalDesiredHeight: 390
+
+rtl.Console.superClass: XTerm
+rtl.Console.iconPixmapFile: ~rtl/custom/bitmaps/console1.xbm
+
+rtl.init.superClass: XTerm
+rtl.init.iconPixmapFile: ~rtl/custom/bitmaps/tombstone.xbm
+rtl.init.includeHostInIconTitle: off
+
+rtl.emacs.superClass: TextClass
+rtl.emacs.includeHostInTitle: off
+rtl.emacs.iconHostLeft: 1
+rtl.emacs.iconHostRight: 46
+rtl.emacs.iconHostTop: 24
+rtl.emacs.iconHostBottom: 52 
+rtl.emacs.iconPixmapFile: ~rtl/custom/bitmaps/emacs1.xbm
+
+rtl.xfd.iconPixmapFile:  ~rtl/custom/bitmaps/abc.xbm
+
+rtl.texx.iconPixmapFile: ~rtl/custom/bitmaps/tex.xbm
+rtl.texx.userZoomMinWidth: 1180
+rtl.texx.userZoomMinHeight: 740
+
+rtl.bitmap.iconPixmapFile:~rtl/custom/bitmaps/iconedit.xbm
+
+rtl.messages.superClass: TextClass
+rtl.messages.iconPixmapFile: ~rtl/custom/bitmaps/zip.xbm
+
+rtl.xman.fixedWidth: on
+rtl.xman.normalMinHeight:  200
+rtl.xman.normalDesiredHeight: 400
+
+rtl.csh.superClass: TextClass
+rtl.csh.iconPixmapFile: ~rtl/custom/bitmaps/tm.xbm
+
+rtl.typescript.superClass:TextClass
+rtl.typescript.iconPixmapFile: ~rtl/custom/bitmaps/cmdtool.xbm
+
+rtl.help.superClass: TextClass
+rtl.help.iconPixmapFile: ~rtl/custom/bitmaps/huh.xbm
+
+rtl.pipescript.superClass: TextClass
+rtl.pipescript.iconPixmapFile: ~rtl/custom/bitmaps/pipes1.xbm
+
+rtl.ez.superClass: TextClass
+rtl.ez.iconPixmapFile: ~rtl/custom/bitmaps/ez.xbm

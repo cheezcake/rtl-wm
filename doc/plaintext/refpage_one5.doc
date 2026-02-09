@@ -1,0 +1,49 @@
+                             QUICK REFERENCE PAGE
+                       SIEMENS RTL TILED WINDOW MANAGER
+                         RELEASE 5 FOR USE WITH X11R2
+
+                                1 BUTTON MOUSE
+
+
+
+Borders                                 Icon
+
+       NONE  -- Resize                         NONE  -- Open
+      SHIFT  -- Move                          SHIFT  -- Move
+       CTRL  -- Resize*                        CTRL  -- Exchange
+ CTRL SHIFT  -- Redraw                   CTRL SHIFT  -- Icon Menu
+
+     * Toggles gravity during operation      Note: When opening the icon,
+                                           double clicking automatically places
+     Side borders constrain move and       the window.  A single press or click
+   resize                                  allows the user to place it
+                                           manually.
+Zoom Gadget
+                                        Rtl Icon
+       NONE  -- Desire
+      SHIFT  -- Zoom / Unzoom                  NONE  -- Main Manager Menu
+       CTRL  -- Enlarge                       SHIFT  -- Move
+ CTRL SHIFT  -- Close                          CTRL  -- Exchange
+                                         CTRL SHIFT  -- Main Manager Menu
+
+Move Gadget
+                                        Background
+       NONE  -- Relocate
+      SHIFT  -- Move                           NONE  -- Main Manager Menu
+       CTRL  -- Exchange                      SHIFT  -- Deselect Listener
+ CTRL SHIFT  -- Close                          CTRL  -- Deselect Listener
+                                         CTRL SHIFT  -- Redraw All
+
+Header
+
+       NONE  -- Window Menu
+      SHIFT  -- Move
+       CTRL  -- Sent to client
+ CTRL SHIFT  -- Redraw
+
+
+     To cancel an operation, hold CTRL and SHIFT while releasing or clicking
+   the mouse button.
+
+     A question mark cursor is a request for confirmation.  Click the mouse
+   button to confirm, hold CTRL and SHIFT and click the mouse button to cancel.

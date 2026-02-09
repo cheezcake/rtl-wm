@@ -1,0 +1,34 @@
+Andrew Typescript
+	typescript
+Andrew Console
+	console
+Andrew Help
+	help
+Andrew Editor
+	ez
+Andrew Mail
+	messages
+Transcript 
+	xterm -sb
+Console 
+	xterm -C -sb -name Console
+Terminal 
+	xterm -fn serif10
+Clock 
+	xclock -update 90 -analog
+Gmacs 
+	gmacs
+GMACS 
+	gmacs -font 9x15
+Preferences
+	xpref
+System Load 
+	xload
+Performance Monitor
+	xperfmon
+Calculator 
+	xcalc
+Demon
+	xdemon
+NoOp 
+	cat </dev/null

@@ -1,0 +1,7 @@
+#! /bin/sh
+DISPLAY="unix:0";export DISPLAY
+(console Rtl.Console)
+(typescript )
+(gmacs &)
+(messages )
+xset m 9 3

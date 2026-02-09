@@ -1,0 +1,203 @@
+\documentstyle{article}
+\font\boldfr=cmssbx10 scaled \magstep3
+\font\tinyb=cmbx5
+\font\smallb=cmbx8
+\pagestyle{empty}
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{6.5in}
+\setlength{\parindent}{0pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\unitlength}{2pt}
+	
+\begin{document}
+\newbox\RTLlogo
+\setbox\RTLlogo=\hbox{
+\begin{picture}(21,0)(0,0)
+\thicklines
+\put(0,0){\framebox(21,21){}}
+\put(7,0){\makebox(14,7){\smallb RTL}}
+\put(0,14){\makebox(14,7){\tinyb Siemens}}
+\put(0,14){\line(1,0){14}}
+\put(7,7){\line(1,0){14}}
+\put(7,0){\line(0,1){14}}
+\put(14,7){\line(0,1){14}}
+\end{picture}}
+\hbox to\hsize{\hfill \lower17pt\copy\RTLlogo\boldfr\ \ Quick
+Reference Page (3 button mouse)\hfill}
+\vskip .2in plus 1fill
+\begin{picture}(105,80)(0,15)
+\put(0,30){\thicklines\framebox(100,50){}}
+\put(1,31){\framebox(98,48){}}
+\put(1,70){\line(1,0){98}}
+\put(8,70){\line(0,1){9}}
+\put(92,70){\line(0,1){9}}
+%\put(1,75){\line(1,0){9}}
+\put(0.5,30.5){\thicklines\line(0,1){4.5}\line(1,0){4.5}}
+\put(0,30){\thicklines\line(0,1){5}\line(1,0){5}}
+\put(0.5,79.5){\thicklines\line(0,-1){4.5}\line(1,0){4.5}}
+\put(0,80){\thicklines\line(0,-1){5}\line(1,0){5}}
+\put(99.5,30.5){\thicklines\line(0,1){4.5}\line(-1,0){4.5}}
+\put(100,30){\thicklines\line(0,1){5}\line(-1,0){5}}
+\put(99.5,79.5){\thicklines\line(0,-1){4.5}\line(-1,0){4.5}}
+\put(100,80){\thicklines\line(0,-1){5}\line(-1,0){5}}
+\put(4.5,75){\makebox(0,0){\vrule width2pt height1pt depth1pt}}
+\put(11,75){\makebox(0,0)[l]{\it  Window Name}}
+\put(50,50){\makebox(0,0){\it contents of window }}
+\put(4.5,90){\vector(0,-1){13.5}}
+\put(3.5,91){\makebox(0,0)[bl]{zoom gadget}}
+\put(95.5,90){\vector(0,-1){13.5}}
+\put(95.5,91){\makebox(0,0)[b]{move gadget}}
+\put(50,90){\vector(0,-1){13.5}}
+\put(50,91){\makebox(0,0)[b]{header}}
+\put(1,20){\vector(0,1){10}}
+\put(0,19){\makebox(0,0)[tl]{corner border}}
+\put(60,20){\vector(0,1){10}}
+\put(60,19){\makebox(0,0)[t]{side border}}
+\end{picture}
+\hfill
+\begin{picture}(60,70)(0,10)
+\put(0,70){\framebox(8,10){\vrule width4pt height2pt
+depth2pt}}
+\put(10,75){\makebox(0,0)[l]{\it unzoomed}}
+\put(0,55){\framebox(8,10){}}
+\put(2,57){\framebox(4,6){}}
+\put(10,60){\makebox(0,0)[l]{\it zoomed}}
+\put(0,40){\framebox(8,10){\vrule width4pt height2pt
+depth2pt}}
+\put(0,45){\line(1,0){8}}
+\put(12,39){\makebox(0,0)[l]{\it zoom tied to listener}}
+\put(0,25){\framebox(8,10){}}
+\put(2,27){\framebox(4,6){}}
+\put(0,30){\line(1,0){8}}
+\put(20,18){\makebox(0,0){Zoom Gadget States}}
+\end{picture}
+\hfill
+\vfill
+\hrule
+\vfill
+\hbox to\hsize{
+\hfill
+\begin{tabular}{|r|ccc|}
+\hline
+\multicolumn{4}{|c|}{\bf Borders} \\
+\hline
+& L & M & R \\
+\hline
+& resize & move & window menu \\
+{\sc shift} & resize\dag & move\dag & --- \\
+\hline
+\multicolumn{4}{|l|}{{\em Note:\/} Side borders
+constrain move/resize.} \\
+\hline
+\end{tabular}
+\hfill
+\begin{tabular}{|r|c|c|}
+\hline
+\multicolumn{3}{|c|}{\bf Header} \\
+\hline
+& M &R \\
+\hline
+& move & window menu \\
+{\sc shift} & move\dag & {\em to client} \\
+\hline
+\multicolumn{3}{|l|}{{\em Note:\/} Other buttons to client} \\
+\hline
+\end{tabular}
+\hfill}
+\vfill
+\hbox to\hsize{\hfill
+\begin{tabular}{|r|ccc|}
+\hline
+\multicolumn{4}{|c|}{\bf Zoom Gadget} \\
+\hline
+& L &\ M\ & R \\
+\hline
+& desire & --- & --- \\
+{\sc shift} & zoom/unzoom & --- & --- \\
+{\sc ctrl} & enlarge & --- & --- \\
+{\sc ctrl-shift} & \multicolumn{2}{c}{\hbox{}\dotfill 
+redraw\dotfill\hbox{}} & close \\
+\hline
+\end{tabular}
+\hfill
+\begin{tabular}{|r|ccc|}
+\hline
+\multicolumn{4}{|c|}{\bf Move Gadget} \\
+\hline
+&\ L\ & M & R \\
+\hline
+& --- & relocate & --- \\
+{\sc shift} & --- & move  & --- \\
+{\sc ctrl} & --- & exchange & --- \\
+{\sc ctrl-shift} & \multicolumn{2}{c}{\hbox{}\dotfill 
+redraw\dotfill\hbox{}} & close \\
+\hline
+\end{tabular}
+\hfill}
+\vfill
+\hbox to\hsize{
+\hfill
+\begin{tabular}{|r|ccc|}
+\hline
+\multicolumn{4}{|c|}{\bf RTL Icon} \\
+\hline
+&\ L\ & M & R \\
+\hline
+& deselect listener & move & manager menu \\
+{\sc shift} & --- & move\dag  & --- \\
+{\sc ctrl} & --- & exchange &  --- \\
+{\sc ctrl-shift} & \multicolumn{2}{c}{\hbox{}\dotfill 
+redraw all\dotfill\hbox{}} & --- \\
+\hline
+\end{tabular}
+\hfill}
+\vfill
+\hbox to\hsize{
+\begin{tabular}{|r|ccc|}
+\hline
+\multicolumn{4}{|c|}{\bf Icon} \\
+\hline
+&\ L\ & M & R \\
+\hline
+& open & move & icon menu \\
+{\sc shift} & {\em to client}  & move\dag  & {\em to client} \\
+{\sc ctrl} & {\em to client} & exchange & {\em to client} \\
+{\sc ctrl-shift} & \multicolumn{2}{c}{\hbox{}\dotfill 
+redraw\dotfill\hbox{}} & soft kill \\
+\hline
+\end{tabular}
+\hfill
+\begin{tabular}{|r|ccc|}
+\hline
+\multicolumn{4}{|c|}{\bf Background} \\
+\hline
+&\ L\ & M & R \\
+\hline
+&\multicolumn{2}{c}{\hbox{}\dotfill deselect 
+listener\dotfill\hbox{}} & manager menu \\
+{\sc ctrl-shift} & \multicolumn{2}{c}{\hbox{}\dotfill 
+redraw all\dotfill\hbox{}} &
+--- \\
+\hline
+\end{tabular}
+}
+\vfill
+{\bf NOTES:} 
+\begin{itemize}
+\item To cancel an operation press the {\sc RIGHT} mouse
+button. 
+\item A question mark cursor is a request for confirmation.
+Click the {\sc LEFT} or {\sc MIDDLE} mouse button to confirm,
+the {\sc RIGHT} mouse button to cancel.
+\end{itemize}
+\vspace{2ex minus 1ex}
+\dag\ with gravity toggled
+\vspace{2ex minus 1ex}
+\hrule
+\vspace{2ex minus 1ex}
+\hbox to \hsize{RTL Release 5.0 \hfill June 1988}
+\vspace{2ex minus 2ex}
+\end{document}
+

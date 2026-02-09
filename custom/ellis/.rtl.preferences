@@ -1,0 +1,139 @@
+rtl.gravity: 16
+rtl.borderSize: 5
+rtl.outerBorderLinewidth: 2
+rtl.innerBorderLinewidth: 1
+rtl.clearBodyOnRedraw: on
+rtl.distinguishCornerBordersByInverse: on
+rtl.distinguishCornerBorders: on
+
+rtl.useRtlIcon: on
+rtl.placeCursorBackOnCancel: on
+
+rtl.focusFollowsPointer: on
+
+rtl.allowAggressiveRepopulation: on
+
+rtl.autoProrate: off
+
+rtl.iconPlacement: 1
+rtl.secondaryIconPlacement: 4
+
+rtl.autoRepopulateLast: on
+rtl.autoRepopulateOnAutoUnzoom: on
+rtl.autoRepopulateOnClose: on
+rtl.autoRepopulateOnExplicitUnzoom: on
+
+rtl.preferPreviousPositionOnAutoRepopulate: on
+rtl.preferPreviousPositionOnExplicitRepopulate: on
+
+rtl.requirePreviousPositionOnAutoRepopulate: on
+rtl.requirePreviousPositionOnLastRepopulate: on
+
+rtl.allowAutomaticShrinkOnAutoRepopulate: on
+rtl.allowAutomaticShrinkOnExchange: on
+
+rtl.allowShrinkOnCornerOpen: on
+rtl.allowShrinkOnResize: off
+
+rtl.tryCenterNeighborhoodOnOpen: on
+rtl.tryEdgeNeighborhoodOnOpen: off
+rtl.trySlidingOnResize: on
+rtl.tryCenterNeighborhoodOnResize: on
+rtl.tryEdgeNeighborhoodOnResize: off
+rtl.tryCenterNeighborhoodOnExchange: on
+                                    
+rtl.preferCloseToShrinkOnCornerOpen: on
+rtl.preferCenterNeighborhoodToAutomaticCloseOnOpen: on  
+rtl.preferCenterNeighborhoodToAutomaticShrinkOnOpen: on
+rtl.preferCenterNeighborhoodToShrinkOnOpen: on
+rtl.preferEdgeNeighborhoodToAutomaticCloseOnOpen: on
+rtl.preferDesktopToAutomaticShrinkOnAutoOpen: off
+rtl.preferDesktopToShrinkOnAutoOpen: off
+
+rtl.preferCloseToShrinkOnResize: on
+rtl.preferSlidingToAutomaticCloseOnResize: on
+rtl.preferSlidingToAutomaticShrinkOnResize: on
+rtl.preferSlidingToShrinkOnResize: on
+rtl.preferCenterNeighborhoodToAutomaticCloseOnResize: on
+rtl.preferCenterNeighborhoodToShrinkOnResize: on
+
+rtl.unzoomTiedListenerIfNecessary: off
+
+
+rtl*aggressivelyRepopulate: off
+rtl*forceShrinkOnUnzoom: off 
+rtl*ignoreInitialPositionHints: on
+rtl*listenerTiedToZoom: off
+rtl*preferPreviousIconPosition: on
+rtl*autoPlaceOnClientOpen: off
+
+
+
+rtl.outputonly.useBorders: off
+rtl.outputonly.useGadgets: off
+rtl.outputonly.headerHeight: 4
+rtl.outputonly.includeResClassInTitle: off
+rtl.outputonly.includeTitleInHeader: off
+
+rtl.xclock.superClass: outputonly
+rtl.xclock.normalDesiredWidth: 74
+rtl.xclock.normalDesiredHeight: 80
+		
+rtl.xload.superClass: outputonly
+
+rtl.xlogo.superClass: outputonly
+rtl.xlogo.headerHeight: 2
+
+rtl.xbiff.superClass: outputonly
+rtl.xbiff.userNormalMinWidth: 64
+rtl.xbiff.userNormalMinHeight: 64
+rtl.xbiff.iconPixmapFile: ~rtl/custom/bitmaps/zip.xbm
+
+
+
+rtl.emacs.includeHostInTitle: off
+rtl.emacs.includeResClassInTitle: off
+rtl.emacs.includeResClassInIconTitle:  off
+rtl.emacs.includeNameInIconTitle:  off
+rtl.emacs.includeTitleInPixmapIcon: on
+rtl.emacs.iconHostLeft: 1
+rtl.emacs.iconHostRight: 46
+rtl.emacs.iconHostTop: 24
+rtl.emacs.iconHostBottom: 52 
+rtl.emacs.iconPixmapFile: ~rtl/custom/bitmaps/emacs1.xbm
+
+rtl.XTerm.includeResClassInTitle: off
+rtl.XTerm.includeHostInIconTitle: on
+rtl.XTerm.includeNameInIconTitle: off
+rtl.XTerm.includeResClassInIconTitle: off
+rtl.XTerm.includeTitleInPixmapIcon: on
+rtl.XTerm.iconPixmapFile: ~rtl/custom/bitmaps/xterm1.xbm
+rtl.XTerm.iconHostLeft: 1
+rtl.XTerm.iconHostRight: 71
+rtl.XTerm.iconHostTop: 14
+rtl.XTerm.iconHostBottom: 32
+rtl.XTerm.clientMinWidth: 200
+rtl.XTerm.clientMinHeight: 120
+rtl.XTerm.normalDesiredWidth: 400
+rtl.XTerm.normalDesiredHeight: 292
+
+rtl.Console.includeHostInTitle: off
+rtl.Console.iconPixmapFile: ~rtl/custom/bitmaps/console1.xbm
+
+rtl.init.iconPixmapFile: ~rtl/custom/bitmaps/nobozos.xbm
+rtl.init.includeTitleInPixmapIcon: off
+
+
+
+rtl.xfd.iconPixmapFile:  ~rtl/custom/bitmaps/abc.xbm
+
+rtl.xpref.includeHostInTitle: off
+rtl.xpref.clientMinWidth: 220
+rtl.xpref.clientMinHeight: 480
+
+
+rtl.messages.includeResClassInTitle: off
+rtl.messages.includeHostInIconTitle:  on
+rtl.messages.includeNameInIconTitle: off
+rtl.messages.includeTitleInPixmapIcon:  on
+rtl.messages.iconPixmapFile: ~rtl/custom/bitmaps/zip.xbm

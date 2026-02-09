@@ -1,0 +1,101 @@
+RELEASE 5.1 OF THE SIEMENS RTL TILED WINDOW MANAGER
+                  
+is now available in the /contrib/rtl5.1 directory on
+expo.lcs.mit.edu.  It includes C source code (with an
+Imakefile) as well as as manuals and tutorials in Scribe, Tex,
+Postscript, and plaintext formats.
+
+It is quite similar to the beta release, with a few bug fixes,
+and portability improvements (12 char filenames, xio.h)
+
+This software is being submitted to the X Consortium for
+inclusion on the contributor's tape for Release 3.  It will
+also be submitted to comp.sources.x.
+
+Due to limited resources, we are unable to distribute
+tapes.  The size of the system precludes the use of
+electronic mail for distribution.
+
+Features of this distribution:
+
+    - This is a tiled window manager.  Windows and
+    icons do not overlap (except for transient and
+    override-redirect windows).  Arbitrary tiled layouts
+    are supported, not just columns.
+
+    - Automatic strategies are provided for window
+    placement and sizing.  The degree of automation
+    is controlled by a variety of options.
+
+    - Windows are decorated with titlebars,borders and
+    gadgets. The size and presence of these decorations
+    can be individually controlled.
+
+    - Supports most of the X11R2 version of the conventions
+    for Client / Window Manager communications, except
+    for wm installation of colormaps
+
+    - The user can save and restore window layouts.
+    That is, RTL is a session manager as well as a
+    window manager.
+
+    - Both click-to-type and real-estate-driven
+    focus models are available.
+
+    -  The user can specify a separate icon area
+    and control icon layout within it.
+
+    - The wm will optionally write application-specific
+    information over specified regions of pixmap icons.
+
+    - The user can override the client's pixmap icon.
+    A variety of snazzy icons are provided for the
+    usual applications.
+    
+    - Users can perform group-iconification -- display
+    a single icon for a group of top-level windows (for
+    clients that define window groups).
+    
+    - Support is provided for both 3-button and 1-button
+    mice.
+
+    - Using preference files, users can organize
+    applications in a class hierarchy, for purposes of 
+    inheriting option settings.
+
+The /contrib/rtl5.1 directory contains a README file as
+well as a number of files in compressed tar format.
+The README file contains complete instructions
+for uncompressing the files, and for installing the
+system.  A SUMS file is included as well, for checking on the
+results of ftp.
+
+Please note again, that due to limited resources,
+we cannot send out tapes of the system or distribute
+it via electronic mail.
+
+We are happy to receive comments and questions,
+and will do our best to respond to them.  Send
+them to
+
+      rtl@siemens.com
+
+or
+
+    Software Technology Department
+    Siemens RTL
+    105 College Rd East,
+    Princeton NJ, 08540.
+    Attn: Tiled Window Manager
+
+This is the first tiled window manager developed that
+supports arbitrary layouts, and is as much a research
+vehicle as a production-quality window manager.
+Consequently, there are an extremely large number of options
+that may be set by the user (although naive users can
+use the default option settings, or one of the preference
+files distributed with the system).  We are particularly
+interested in users' experiences with various option settings.
+
+Enjoy!
+

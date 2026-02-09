@@ -1,0 +1,94 @@
+This is a distribution of Release 5.1 of the
+Siemens RTL Tiled Window Manager
+
+------------------------------------------------------------
+
+There are 14 compressed tar files.
+Join them by:
+	% cat rtl.tar.Z.* > rtl.tar.Z
+
+Uncompress them by:
+	% uncompress rtl.tar
+
+Extract the files by:
+	% tar xf rtl.tar
+
+There should now be 3 subdirectories:
+
+     doc, custom, and extras
+
+------------------------------------------------------------
+
+          The top directory contains
+
+    -- .c, .h, and i. files -- source for rtl
+    -- IMakefile -- a simple Makefile to make the system
+
+To make rtl:
+	-- If you got this on the Release 3 tape, it should build when you build 
+	   the contrib tree.
+	-- Otherwise, set TOPDIR to the top of your X sources;
+	   make Makefile (calls Imake to build a correct
+	   Makefile); make all (to build rtl)
+
+------------------------------------------------------------
+
+          The doc subdirectory contains
+
+    -- ANNOUNCENT -- The announcement of Release 5.1 with a list of features
+    -- plaintext -- A subdirectory with plaintext versions of the documentation
+    -- tex -- A subdirectory with tex versions of the documentation
+    -- scribe -- A subdirectory with scribe versions of the documentation
+    -- postscript -- A subdirectory with postscript versions of the documentation
+
+          Each of the subdirectories within doc contains (w appropriate extensions)
+
+    -- tutorial5 -- A tutorial for first time users of rtl
+    -- manual5 -- A manual for release 5.1
+    -- refpage5 -- A quick reference page for a 3 button mouse
+    -- refpage_one5 -- A quick reference page for a 1 button mouse
+
+------------------------------------------------------------
+
+          The custom subdirectory contains
+
+    -- bitmaps -- a variety of bitmap files used as pixmap icons
+    -- ellis, berman, jcc -- The customization files used by each of the developers
+
+          The customization subdirectories ( ellis, berman & jcc ) may contain
+
+    -- .rtl.preferences -- the main preference file for rtl-related options
+    -- .rtl.profiles -- specifies additional preference files
+    -- .rtl.tools -- for setting up the Tools submenu
+    -- .rtl.startup -- a file optionally executed on startup
+    -- .rtl.layout -- holds a saved window layout
+
+See the tutorial and the Customization section of the manual for more information.
+
+------------------------------------------------------------
+
+          The extras subdirectory contains
+
+    -- rhyme.c and rhymes -- edit rhyme.c to open "rhymes" on the correct
+       path, then compile and run it in an xterm window.
+
+    -- yow.c, yow2.c, yow-press.c, yow-transient.c  -- each of
+       these is a test program for window managers.
+
+	yow-transient.c uses client icon and transient windows
+
+--------------------------------------------------------------
+|                                                            |
+|	If you install and use rtl, we would like to hear    |
+|	about it.  Please send your comments to:	     |
+|		rtl@siemens.com				     |
+|	If there is sufficient interest, we may establish    |
+| 	an rtl mailing list.  Please indicate if you are     |
+|	interested.  					     |
+|							     |
+|	This is the final major release of this software     |
+|	scheduled.  We will try to fix bugs, (limited)	     |
+|	time permitting.  We would appreciate your bug       |
+|	reports at the above address.			     |
+|							     |
+--------------------------------------------------------------

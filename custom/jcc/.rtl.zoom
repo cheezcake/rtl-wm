@@ -1,0 +1,29 @@
+rtl.zoomInHeader: on
+rtl.zoomInCornerBorder: on
+rtl.zoomInSideBorder: on
+rtl.zoomInMoveGadget: on
+rtl.zoomInZoomGadget: on
+rtl.allowAggressiveRepopulation: on
+rtl.allowAutomaticShrinkOnAutoRepopulate: on
+rtl.onlyRepopulateSinceOnAutoUnzoom: on
+rtl.onlyRepopulateSinceOnExplicitUnzoom: on
+rtl.preferUnzoomToClose: on
+
+rtl*listenerTiedToZoom: on
+
+rtl.Xterm.aggressivelyRepopulate: on
+
+rtl.console.requireManualClose: on
+
+rtl.emacs.allowShrinkOnUnzoom: off
+rtl.emacs.allowShrinkOnAutoUnzoom: off
+rtl.emacs.allowZoomClose: on
+rtl.emacs.forceShrinkOnUnzoom: off
+rtl.emacs.forceShrinkOnAutoUnzoom: off
+rtl.emacs.zoomOnOpen: on
+rtl.emacs.zoomDesiredWidth: 600
+rtl.emacs.zoomDesiredHeight: 450
+
+rtl.xclock.noteListener: off
+
+rtl.xbiff.noteListener: off

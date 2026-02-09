@@ -1,0 +1,15 @@
+#! /bin/csh
+
+setenv DISPLAY "unix:0"
+cd $HOME
+
+xsetroot -bitmap ~rtl/custom/bitmaps/lightgrey.xbm
+
+xterm -C -sb -name Console &
+
+xclock -update 90 -analog &
+
+xterm -sb &
+messages &
+
+gmacs &

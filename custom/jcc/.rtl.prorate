@@ -1,0 +1,4 @@
+rtl.autoProrate: on
+rtl.biasedAutoProrate: on
+rtl.prorateLocally: off
+rtl.prorateVerticallyFirst: on

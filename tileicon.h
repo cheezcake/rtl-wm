@@ -1,0 +1,75 @@
+/*
+static char sccs_id[] = "@(#)tileicon.h	5.6  9/1/88";
+*/
+
+/*
+ * Copyright 1988 by Siemens Research and Technology Laboratories, Princeton, NJ
+ *
+ *                         All Rights Reserved
+ *
+ * Permission to use, copy, modify, and distribute this software and its
+ * documentation for any purpose and without fee is hereby granted,
+ * provided that the above copyright notice appear in all copies and that
+ * both that copyright notice and this permission notice appear in
+ * supporting documentation, and that the name of Siemens Research and Technology
+ * Laboratories not be used in advertising or publicity pertaining to
+ * distribution of the software without specific, written prior permission.
+ *
+ *
+ * SIEMENS DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+ * ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL
+ * SIEMENS BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR
+ * ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ * WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ * ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+ * SOFTWARE.
+ */
+
+
+
+#ifndef TILEICON
+#include "tileiconP.h"
+#endif
+
+#ifndef BASETYPE
+#include "basetype.h"
+#endif
+
+#ifndef TILEMENU
+#include "tilemenuP.h"
+#endif
+
+extern TileIcon_Init();
+    /* tilemenu, proc */
+
+extern void TileIcon_Create();
+    /* uwinp */
+
+extern void TileIcon_Destroy();
+    /* uwinp */
+
+extern void TileIcon_Retitle();
+    /* uwinp */
+
+extern char *TileIcon_Get_Title();
+    /* uwinp */
+
+extern TWPoint TileIcon_Position();
+    /* TWPoint pos */
+
+extern void TileIcon_Move();
+    /* Userwin *uwinp */
+    /* TWPoint pos */
+
+extern void TileIcon_Redraw();
+    /* Userwin *uwinp */
+
+extern void TileIcon_Compact();
+
+extern void TileIcon_Add();
+    /* uwinp */
+
+extern void TileIcon_Remove();
+    /* uwinp */
+
+
