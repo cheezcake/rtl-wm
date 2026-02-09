@@ -38,3 +38,6 @@ umented in the doc/ directory.
 -- 
 There's a video from Siemens about it which is on YouTube:
 https://www.youtube.com/watch?v=IOxIUeroIVQ
+
+and some notes with patches for the original X11R3-contrib version, from 1989:
+https://mirrors.nycbug.org/pub/The_Unix_Archive/Unix_Usenet/comp.sources.x/1989-June/000581.html
