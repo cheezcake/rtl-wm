@@ -33,4 +33,8 @@ file is needed, so you are able to at least start an xterm from
 within rtl.
 
 There seem to many yet untouched features in rtl, which are doc-
-umented in the doc/ directory. 
+umented in the doc/ directory.
+
+-- 
+There's a video from Siemens about it which is on YouTube:
+https://www.youtube.com/watch?v=IOxIUeroIVQ
